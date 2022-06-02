@@ -1,0 +1,334 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.header {
+  background: #000000;
+  padding-top: 15px;
+padding-bottom: 15px;
+}
+.header img {
+  width: 100px;
+}
+.login span {
+  display: block;
+  color: #fef030;
+  font-size: 16px;
+}
+.login a {
+  color: #fff;
+font-weight: 800;
+font-size: 20px;
+text-transform: capitalize;
+text-decoration: navajowhite;
+margin-top: 5px;
+display: block;
+}
+.login a i {
+  margin-right: 10px;
+}
+.login p {
+  margin: 0;
+  text-align: right;
+}
+img {
+  width: 100%;
+}
+.login-box {
+  background: #fff;
+border-radius: 8px;
+box-sizing: border-box;
+box-shadow: 0 5px 10px 0 rgba(0,0,0,.5);
+width: 20%;
+padding-left: 1%;
+padding-right: 1%;
+position: absolute;
+top: 20px;
+right: 10%;
+}
+.login-box input {
+  border-radius: 4px;
+  display: flex;
+  border: 1px solid #979797;
+  outline: none;
+  min-height: 46px;
+  font-size: 10px;
+  color: #212529;
+  width: 100%;
+  padding: 0 0 0 32px;
+}
+.login-box .country-number {
+  position: absolute;
+background: #dee8f9;
+color: #1b3c9b;
+width: 12.4%;
+height: 44px;
+text-align: center;
+line-height: 44px;
+top: 1px;
+left: 1px;
+font-size: 10px;
+border-radius: 4px 0 0 4px;
+}
+.login-box .w-100 {
+  margin-top: 8px;
+}
+.login-box .otp input {
+  padding-left: 4px;
+}
+.login-box .otp button {
+  width: 40%;
+  color: #fff;
+  background: #1b3c9b;
+  text-align: center;
+  line-height: 44px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  border: 0;
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.login-btn {
+  width: 100%;
+  height: 46px;
+  font-size: 16px;
+  background: linear-gradient(180deg,#9cea13,#277907);
+  text-align: center;
+  line-height: 46px;
+  color: #fff;
+  border-radius: 4px;
+  margin-top: 1rem;
+  border: 0;
+}
+.or .das {
+  display: inline-block;
+  width: 40%;
+  height: 2px;
+  background: #d8d8d8;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.5);
+}
+.or span {
+  font-size: 10px;
+  color: #000;
+  opacity: 0.5;
+  padding: 0 9px;
+}
+.facebook-img img {
+  width: 45%;
+}
+.form-end p {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.form-end p {
+  margin-bottom: 5px;
+}
+.form-end p a {
+  color: #000;
+  text-decoration: underline;
+}
+.login-box .w-100.form-end {
+  margin-top: 1rem;
+}
+.bonus-img {
+  margin-top: -15px;
+}
+.section-title {
+  margin-top: 105px;
+  margin-bottom: 50px;
+  font-size: 32px;
+  color: #1e1e1e;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+.responsible-game h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: .1rem;
+  font-weight: 500;
+}
+.responsible-game p {
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 0;
+  margin-bottom: 2px;
+  padding-left: 30px;
+}
+.responsible-game p::before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url('../img/mark.png');
+  position: absolute;
+left: 0;
+}
+.gaming {
+  margin-bottom: 80px;
+}
+.easiest {
+  margin-top: 80px;
+
+}
+.bg-color {
+background: linear-gradient(180deg,#224390,#05112d);  
+}
+.easiest .section-title {
+  margin: 0;
+  display: block;
+  padding: 60px 0;
+  color: #fff;
+}
+.easiest p {
+  font-size: 20px;
+  color: #fff;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.easiest strong {
+  font-size: 20px;
+  color: #fff;
+  line-height: 30px;
+} 
+.easiest-content {
+  margin-top: 30px;
+margin-bottom: 80px;
+}
+.easiest {
+  padding-bottom: 60px;
+}
+.footer img {
+  width: auto;
+}
+.footer img.footer-logo {
+  width: 160px;
+}
+.footer img.footer-trof {
+  width: 100px;
+  display: block;
+  margin: 0px auto;
+  margin-top: 8rem;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+.follow li {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+}
+.follow li img:first-child {
+  width: 30px;
+}
+.follow li img:last-child {
+  margin-left: 5px;
+}
+.follow li:last-child img:last-child {
+  margin-left: 0px;
+}
+.follow li:first-child {
+  margin-right: 10px;
+}
+.follow {
+  margin-top: 3.5rem;
+}
+.quick-links li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #3c4b6b;
+  min-width: 210px;
+  display: inline-block;
+padding: 8px 0;
+}
+.footer h2 {
+  font-size: 22px;
+  text-align: left;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.certificates img {
+  margin-bottom: 15px;
+  margin-right: 10px;
+  width: 70px;
+}
+.footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+} 
+.footer-bottom {
+  background: #040f27;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+.footer-bottom p {
+  margin: 0;
+  display: block;
+  font-size: 14px;
+  color: hsla(0,0%,100%,.5);
+}
+.loop .owl-item {
+  box-shadow: 0 0 10px 0 #ddd;
+  width: 15% !important;
+}
+.loop .owl-item.active.center {
+  width: 23% !important;
+  margin: 20px 60px !important;
+}
+.loop .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.loop {
+  padding: 60px 0;
+}
+
+@media (max-width: 767px) {
+  .mobileview {
+    display: none;
+  }
+  .container {
+  max-width: 100% !important;
+}
+.login-box {
+  position: static;
+  width: 70%;
+  margin: 0 auto;
+    margin-top: 0px;
+  margin-top: 60px;
+}
+.gaming .responsible-game {
+  justify-content: start !important;
+  margin-bottom: 30px;
+}
+.gaming {
+  margin-bottom: 0px;
+}
+.easiest .col-md-6.d-flex.justify-content-end.align-items-end {
+  justify-content: center !important;
+  margin-top: 30px;
+}
+.footer img.footer-trof {
+  margin: 0px;
+  margin-top: 30px;
+}
+.follow {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+}
+
+@media (max-width: 520px) {
+  .gaming .w-auto {
+  width: 100% !important;
+  margin-top: 10px;
+}
+}
