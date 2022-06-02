@@ -409,6 +409,9 @@ display: block;
 .header img {
   width: 100px;
 }
+.quick-links li a {
+  display: block;
+}
 
 
 }
