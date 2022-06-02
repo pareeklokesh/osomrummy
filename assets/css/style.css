@@ -8,7 +8,7 @@ body {
 padding-bottom: 15px;
 }
 .header img {
-  width: 100px;
+  width: 120px;
 }
 .login span {
   display: block;
@@ -405,6 +405,9 @@ display: block;
 }
 .destop-none {
   display: block;
+}
+.header img {
+  width: 100px;
 }
 
 
