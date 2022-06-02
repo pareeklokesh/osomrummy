@@ -3,7 +3,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .header {
-  background: #000000;
+  background: linear-gradient(180deg,#224390,#05112d);
   padding-top: 15px;
 padding-bottom: 15px;
 }
