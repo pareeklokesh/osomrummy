@@ -364,6 +364,11 @@ display: block;
 .getbonus button i {
   margin-right: 10px;
 }
+.top-logo {
+  position: absolute;
+z-index: 9;
+top: 2px;
+}
 
 @media (max-width: 767px) {
   .rummy{
@@ -414,6 +419,9 @@ display: block;
 }
 .section-title {
   font-size: 30px;
+}
+.top-logo {
+  position: static;
 }
 
 
