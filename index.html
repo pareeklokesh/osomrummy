@@ -39,8 +39,8 @@
         </p>
       </div>
       <div class="w-auto mobileview">
-      	<img src="assets/img/android.png" style="width: auto;margin-right: 15px;" />
-      	<img src="assets/img/app.png" style="width: auto;" />
+      	<a class="android-button" href="https://bit.ly/dhamaalapp"><img src="assets/img/android.png" style="width: auto;margin-right: 15px;" /></a>
+      	<a class="iphone-button" href="https://apps.apple.com/in/app/dhamaal-games/id1609035302"><img src="assets/img/app.png" style="width: auto;" /></a>
       </div>
     </div>
   </div>
@@ -65,11 +65,15 @@
   </div>
   <div class="w-100 getbonus">
     <p>Get <span>₹ 2000</span> Bonus</p>
-    <button><i class="fa fa-download"></i>Download</button>
+    <a class="android-button destop-none" href="https://bit.ly/dhamaalapp"><img src="assets/img/android.png" style="width: auto;margin-right: 15px;"></a>
+      	<a class="iphone-button destop-none" href="https://apps.apple.com/in/app/dhamaal-games/id1609035302"><img src="assets/img/app.png" style="width: auto;"></a>
   </div>
 </div>
 </div>
-</div>
+
+
+
+
 
 <div class="w-100 position-relative mobileview">
   
@@ -103,6 +107,26 @@
     	</div>
     </div>
   
+</div>
+
+<div class="container-fluid mobileview" style="background:linear-gradient(180deg,#224390,#05112d);padding: 30px 15px;">
+  <div class="container">
+    <div class="row">
+  <div class="bannerbutton" style="position: relative;">
+    <div class="" style="position: relative;">
+  <input type="text" name="" placeholder="Enter mobile number" id="mob-number" min="10" max="10" step="10" maxlength="10" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');">
+  <span class="numbertext">+91</span>
+  <button class="getbutton" disabled=""><span class="spiner">Sending Link</span>Get Download Link</button>
+</div>
+ 
+  
+
+  <span class="link-sent" style="display: none;">We have sent the Dhamaalgame App Download link to 9500000000. Check your phone now!</span>
+</div>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="container-fluid">
@@ -173,8 +197,8 @@
 				<strong>India’s easiest Rummy game </strong>
 				<p> Play more, level up & get exciting instant cashback</p>
 				<div class="d-flex">
-					<img src="assets/img/android.png" style="width: auto;margin-right: 15px;">
-      	<img src="assets/img/app.png" style="width: auto;">
+					<a class="android-button" href="https://bit.ly/dhamaalapp"><img src="assets/img/android.png" style="width: auto;margin-right: 15px;"></a>
+      				<a class="iphone-button" href="https://apps.apple.com/in/app/dhamaal-games/id1609035302"><img src="assets/img/app.png" style="width: auto;"></a>
 				</div>
 				</div>
 				<div class="w-100 ">
@@ -278,5 +302,74 @@
               });
               });
 </script>
+
+<script>
+  $(".getbutton").click(function(){
+    $(this).css("font-size", "0");
+    $(".spiner").css("display", "inline-block");
+  });
+</script>
+<script>
+  window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+</script>
+<script>
+  $(document).ready(function() {
+     $('.getbutton').prop('disabled', true);
+     $('#mob-number').keyup(function() {
+        if($(this).val().length == 10) {
+           $('.getbutton').prop('disabled', false);
+        }
+
+     });
+ });
+</script>
+<script type="text/javascript">
+  $(".getbutton").on("click",function(){
+    var client_id = 99;
+    var number = $("#mob-number").val();
+      var formData = new FormData();
+      formData.append('phone_number',number);
+      formData.append('client_id',client_id);
+      var api_url1="https://staging-api.bopanel.xyz/index.php/web_service/downlode_sms";
+      $(".getbutton").attr("disabled","disabled");
+    $.ajax({
+        url:api_url1,
+        method:"post",
+        data: formData,
+        dataType: 'JSON',
+        processData: false,
+        contentType: false,
+
+        success: function(data){
+            
+            var result=data;
+            if(result.error==0){
+
+             // $(".getbutton").html("Sent");
+             // $(".getbutton").hide();
+             // $(".getbutton").css("font-size","20px");
+              //$("#mob-number").hide();
+              //$(".numbertext").hide();
+              $(".link-sent").text("Dhamaal Games App Download link sent on your number.");
+              $(".link-sent").show();
+              $(".getbutton").css("font-size", "16px");
+              $(".getbutton").removeAttr("disabled");
+              $(".spiner").css("display", "none");
+              $("#mob-number").val('');
+            // filedownload(result.app_link,'App');
+
+             
+
+            }
+          }
+    });
+  });
+
+
+
+</script>
+
 </body>
 </html>
