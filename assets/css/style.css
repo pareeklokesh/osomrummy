@@ -453,6 +453,10 @@ top: 2px;
 }
 }
 
+.responsible-game p ~ br {
+  display: none;
+}
+
 
 
 
@@ -475,10 +479,8 @@ top: 2px;
     margin-top: 0px;
   margin-top: 60px;
 }
-.gaming .responsible-game {
-  justify-content: start !important;
-  margin-bottom: 30px;
-}
+
+
 .gaming {
   margin-bottom: 0px;
 }
@@ -509,6 +511,10 @@ top: 2px;
 .top-logo {
   position: static;
 }
+.gaming .responsible-game {
+  justify-content: start !important;
+  margin-bottom: 30px;
+}
 
 
 @supports (-webkit-touch-callout: none) {
@@ -536,8 +542,18 @@ top: 2px;
 
 @media (max-width: 520px) {
   .gaming .w-auto {
-  width: 100% !important;
-  margin-top: 10px;
+  width: auto !important;
+margin-top: 10px;
+text-align: center;
+}
+.gaming .responsible-game {
+  justify-content: center !important;
+margin-bottom: 30px;
+display: grid !important;
+}
+.gaming .responsible-game img {
+  display: block;
+  margin: 0px auto !important;
 }
 .getbonus p {
   font-size: 25px;}
@@ -549,6 +565,13 @@ top: 2px;
 }
 .getbonus {
   padding: 0 15px;
+}
+.responsible-game p {
+  width: auto !important;
+  display: inline-block;
+}
+.responsible-game p ~ br {
+  display: block;
 }
 
 }
