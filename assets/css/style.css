@@ -583,3 +583,183 @@ display: grid !important;
 }
 
 }
+
+
+
+/*Casino Game Css*/
+
+
+.game_portfolio_section2 {
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+.game_portfolio_section2 .nav-pills {
+    background-color: #2f2c2c;
+    border-top: 1px solid white;
+}
+
+.game_portfolio_section2 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: unset;
+    border-bottom: 2px solid #dadada;
+    border-radius: 0;
+    padding: 8px 0px 2px 0px;
+}
+
+.game_portfolio_section2 .nav-pills .nav-item a {
+    color: #dadada;
+    margin: 0px 15px;
+    padding: 8px 0px 2px 0px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.01800rem;
+}
+.game_portfolio_section2 .tab-content {
+    padding: 0px 15px;
+}
+.game_portfolio_section1 img {
+    width: 100%;
+    object-fit: cover;
+    height: auto!important;
+}
+
+.hovereffect {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    /* border: 3px solid #adb5bd;
+    box-shadow: 0px 5px 6px #555555ab; */
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+    transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+.hovereffect a.info {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    margin: 0px 0 0;
+    padding: 7px 14px;
+    position: relative;
+}
+img.img-fluid.border-role {
+    filter: contrast(150%);
+}
+.p-b-3 {
+    padding-bottom: 3%;
+}
+.hovereffect {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border: 3px solid #ff7f00;
+    box-shadow: 0px 5px 6px #555555ab;
+    border-radius: 14px;
+}
+img.img-fluid.border-role {
+    filter: contrast(150%);
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.game_portfolio_section2 .nav-pills .nav-item a img {
+  width: auto;
+}
+.game_portfolio_section2 .nav-pills {
+  background-color: #2f2c2c;
+  border-top: 1px solid white;
+}
+.m-b-2 {
+  margin-bottom: 30px;
+}
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.hovereffect a {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+.hovereffect a {
+  width: auto;
+}
+.hovereffect a.info {
+  width: auto !important;
+  display: inline-block !important;
+}
+
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88, -0.99, 0, 1.81);
+}
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.hovereffect .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hovereffect:hover a.info {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+.hovereffect:hover h2, .hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+.p-b-3 {
+  padding-bottom: 3%;
+}
+
+@media (max-width: 766px) {
+    .hovereffect a.info {
+  font-size: 14px;
+}
+.game_portfolio_section2 .nav-pills .nav-item a {
+  margin: 0px 5px;
+  font-size: 12px;
+}
+
+
+}
