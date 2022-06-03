@@ -210,8 +210,8 @@ margin-bottom: 80px;
 .footer img.footer-trof {
   width: 100px;
   display: block;
-  margin: 0px auto;
-  margin-top: 8rem;
+  margin-top: 2rem;
+  margin-left: 29px;
 }
 .footer-list {
   list-style: none;
@@ -563,7 +563,27 @@ top: 2px;
   }
 
 }
-
+.easiest-content {
+  text-align: center;
+}
+.easiest-content .d-flex {
+  justify-content: center;
+}
+.footer-logo, .footer img.footer-trof {
+  float: left;
+  margin-top: 0;
+}
+.footer .col-md-4:first-child {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer img.footer-trof {
+  margin-left: 12px;
+}
+.follow.footer-list {
+  width: 100%;
+}
 
 }
 
@@ -599,6 +619,20 @@ display: grid !important;
 }
 .responsible-game p ~ br {
   display: block;
+}
+.responsible-game h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.responsible-game p {
+  font-size: 14px;
+  padding-left: 20px;
+}
+.responsible-game p::before {
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  top: 3px;
 }
 
 }
